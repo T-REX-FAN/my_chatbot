@@ -19,12 +19,11 @@ with col1:
   if name:
     st.write(f"{age}살, {name}님 반갑습니다")
     st.header(f"{name}님 반갑습니다")
-    st.button("나이를 여쭈어봐도 될까요?")
     # st.write(type(age))
 
 with col2:
 
-  if name and st.button("나이를 여쭈어봐도 될까요?") :
+  if st.button("날씨를 여쭈워봐도 될까요?"):
 
     option = st.selectbox("날씨를 선택하세요",["맑음","흐림","비","폭우","지구종말"])
     st.write(option)
