@@ -5,6 +5,8 @@ import streamlit as st
 #   print(number)
 #   streamlit.write(number)
 
+st.button("눌러보세요")
+
 st.title("날씨 챗봇")
 
 st.header("반갑습니다")
