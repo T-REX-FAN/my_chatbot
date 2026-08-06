@@ -5,6 +5,12 @@ import streamlit as st
 #   print(number)
 #   streamlit.write(number)
 
+st.title("날씨 챗봇")
+
+st.header("반갑습니다")
+
+st.subheader("오늘은 어떠신가요?")
+
 # input("이름을 입력하세요")
 col1, col2 = st.columns(2)
 
