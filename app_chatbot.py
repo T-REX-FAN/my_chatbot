@@ -8,11 +8,11 @@ import streamlit as st
 # input("이름을 입력하세요")
 col1, col2 = st.columns(2)
 
-with col1
+with col1:
   name = st.text_input("이름을 입력하세요")
   age = st.number_input("나이를 입력하세요")
 
-with col2
+with col2:
 
   if name:
     st.write(f"{age}살, {name}님 반갑습니다")
