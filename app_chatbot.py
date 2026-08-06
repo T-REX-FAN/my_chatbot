@@ -1,4 +1,4 @@
- import streamlit
+import streamlit as st
 
 # print("hello, world")
 # for number in range(1,6):
