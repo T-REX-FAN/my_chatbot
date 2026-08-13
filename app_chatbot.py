@@ -50,6 +50,7 @@ if st.button("날씨 확인"):
 
 response = requests.get(BASE_URL, params = params)
 data = response.json()
+st.write(data)
 
 try:
   items = data['response']['body']['item']
