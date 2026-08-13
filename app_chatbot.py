@@ -48,7 +48,7 @@ if st.button("날씨 확인"):
     'ny': ny,
   }
 
-response = request.get(BASE_URL, params=params)
+response = requests.get(BASE_URL, params=params)
 data = response.json()
 
 try:
