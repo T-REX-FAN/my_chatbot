@@ -31,7 +31,7 @@ with col2:
 
 
 SERVICE_KEY = "U%2F3cxgpV%2Bn4fLqOHggb3q0Wzbc2DliDoXqNP4FR5yMD7XMsUdxu6n%2FRS6ymOtyqIBJVC2ddPcwdOrHvX%2B%2FgBvQ%3D%3D"
-BASE_URL = "https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0"
+BASE_URL = "https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst"
 
 nx = st.text_input("지역의 X좌표를 입력하세요 (예:60")
 ny = st.text_input("지역의 Y좌표를 입력하세요 (예:60")
@@ -48,7 +48,7 @@ if st.button("날씨 확인"):
     'ny': ny,
   }
 
-response = requests.get(BASE_URL, params=params)
+response = requests.get(BASE_URL, params = params)
 data = response.json()
 st.write(data)
 
