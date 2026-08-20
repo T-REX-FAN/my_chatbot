@@ -38,12 +38,12 @@ ny = st.text_input("지역의 Y좌표를 입력하세요 (예:60")
 
 if st.button("날씨 확인"):
   params = {
-    'serviceKey' : SERVICE_KEY,
+    'serviceKey': SERVICE_KEY,
     'pageNo': '1',
     'numOfRows': '10',
     'dataType': 'JSON',
-    'base_date': '2026813',
-    'base_time': '0700',
+    'base_date': today,
+    'base_time': '0500',
     'nx': nx,
     'ny': ny,
   }
