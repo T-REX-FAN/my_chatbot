@@ -50,8 +50,8 @@ if st.button("날씨 확인"):
     'nx': nx,
     'ny': ny,
   }
+  response = requests.get(BASE_URL, params=params)
 
-response = requests.get(BASE_URL, params=params)
 data = response.json()
 st.write(data)
 
