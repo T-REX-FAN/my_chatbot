@@ -53,13 +53,12 @@ if st.button("날씨 확인"):
   response = requests.get(BASE_URL, params=params)
   data = response.json()
   st.write(data)
-
-try:
-  items = data['response']['body']['item']
-  st.write('##현재 날씨 정보')
-  for item in items:
-    category = item['category']
-    value = item['fcsValue']
-    st.write(f"- {category}: {value}")
-except KeyError:
-  st.error("데이터를 가져올수없습니다.")
+  try:
+    items = data['response']['body']['item']
+    st.write('##현재 날씨 정보')
+    for item in items:
+      category = item['category']
+      value = item['fcsValue']
+      st.write(f"- {category}: {value}")
+  except KeyError:
+    st.error("데이터를 가져올수없습니다.")
