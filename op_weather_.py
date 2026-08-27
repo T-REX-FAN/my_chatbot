@@ -14,4 +14,5 @@ def get_weather(city_name):
 city = st.text_input("도시 이름을 영어로 입력하세요")
 
 if city:
+  st.write(city)
   get_weather(city)
