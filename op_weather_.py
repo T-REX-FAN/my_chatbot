@@ -1,5 +1,5 @@
 import streamlit as st
-import request
+import requests
 
 API_KEY = "8306a95ad41f685d2e59c0e448102948"
 
@@ -8,7 +8,7 @@ st.write("도시 이름을 입력하면 현재 날씨를 알려드려요")
 
 def get_weather(city_name):
   url = f"http://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={API_KEY}&units=metric&lang=kr"
-  response = request.get(url)
+  response = requests.get(url)
   return response.json
 
 city = st.text_input("도시 이름을 영어로 입력하세요")
