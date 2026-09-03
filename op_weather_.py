@@ -17,3 +17,7 @@ city = st.text_input("도시 이름을 영어로 입력하세요")
 if city:
   st.write(city)
   get_weather(city)
+
+  st.write(f"{city}의 날씨를 알려준다")
+  st.write(f"날씨는 : {weather_data['weather'][0]['description']}")
+  st.wrtie(f"온도는 : {weather_data['main']['temp']} C")
