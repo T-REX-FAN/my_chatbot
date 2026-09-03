@@ -9,7 +9,7 @@ city = st.text_input("도시 이름을 영어로 입력하세요")
 def get_weather(city_name):
   url = f"http://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={API_KEY}&units=metric&lang=kr"
   response = requests.get(url)
-  st.write(response.json())
+  # st.write(response.json())
   return response.json
 
 # city = st.text_input("도시 이름을 영어로 입력하세요")
@@ -20,5 +20,5 @@ if city:
   st.write(weather_data)
 
   st.write(f"{city}의 날씨를 알려준다")
-  st.write(f"날씨는 : {weather_data['weather'][0]['description']}")
+  # st.write(f"날씨는 : {weather_data['weather'][0]['description']}")
   st.wrtie(f"온도는 : {weather_data['main']['temp']} C")
