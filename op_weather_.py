@@ -22,3 +22,5 @@ if city:
   st.write(f"{city}의 날씨를 알려준다")
   st.write(f"날씨는 : {weather_data['weather'][0]['main']}")
   st.write(f"온도는 : {weather_data['main']['temp']} C")
+  st.write(f"최저온도는 : {weather_data['main']['temp_min']} C")
+  st.write(f"최고온도는 : {weather_data['main']['temp_max']} C")
