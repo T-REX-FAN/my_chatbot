@@ -30,7 +30,7 @@ if prompt := st.text_input("도시 이름을 입력하세요"):
   with st.chat_message("user"):
     st.markdown(prompt)
   with st.chat_message("assistant"):
-  Eng_city = city_map[city]
+  Eng_city = city_map[prompt,prompt]
   #st.write(city)
   weather_data = get_weather(Eng_city)
   st.write(weather_data)
@@ -39,7 +39,7 @@ if prompt := st.text_input("도시 이름을 입력하세요"):
 
 # city = st.text_input("도시 이름을 영어로 입력하세요")
 
-if city:
+if weather_data.get("cod") == 200:
   Eng_city = city_map[prompt,prompt]
   #st.write(city)
   weather_data = get_weather(Eng_city)
