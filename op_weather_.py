@@ -13,7 +13,7 @@ if "message" not in session_state.messages :
   st.session_state.message = []
 
 for message in st. session_state.messages :
-  with st.chat_message("message["role"]"):
+  with st.chat_message(message["role"]):
     st.markdown(message["content"])
 
 
