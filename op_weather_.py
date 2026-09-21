@@ -12,7 +12,7 @@ weather_dict = {"Clouds":"흐림", "Clear":"맑음", "Rain":"비", "Snow":"눈",
 if "message" not in session_state.messages :
   st.session_state.message = []
 
-for "message" in st. session_state.messages :
+for message in st. session_state.messages :
   with st.chat_message("message["role"]"):
     st.markdown(message["content"])
 
