@@ -27,7 +27,7 @@ def get_weather(city_name):
 
 if prompt := st.text_input("도시 이름을 입력하세요"):
   st.session_state.message.append({"role":"user", "content":prompt})
-  with st.chat_message("user")
+  with st.chat_message("user"):
     st.markdown(prompt)
   with st.chat_message("assistant"):
   Eng_city = city_map[city]
