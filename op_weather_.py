@@ -48,7 +48,7 @@ if prompt := st.text_input("도시 이름을 입력하세요"):
       st.write(f"최고온도는 : {round(weather_data['main']['temp_max'])} C")
       st.markdown(reply)
       st.session_state.message.append({"role":"assistant", "content":prompt})
-   else:
+   else :
      reply = "못찾음 ㅅㄱ."
      st.markdown(reply)
      st.session_state.message.append({"role":"assistant", "content":prompt})
