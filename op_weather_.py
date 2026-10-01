@@ -9,7 +9,7 @@ st.write("도시 이름을 입력하면 현재 날씨를 알려드려요")
 city_map = {"서울":"Seoul", "부산":"Busan", "인천":"Inchen", "대구":"Daegu", "광주":"Gwangju"}
 weather_dict = {"Clouds":"흐림", "Clear":"맑음", "Rain":"비", "Snow":"눈", "Mist":"안개"}
 
-if "message" not in session_state:
+if "message" not in st.session_state:
   st.session_state.message = []
 
 for message in st.session_state.messages:
