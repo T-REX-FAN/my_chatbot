@@ -37,7 +37,7 @@ if prompt := st.text_input("도시 이름을 입력하세요"):
     # st.write(weather_data)
     if weather_data.get("cod") == 200:
    #Eng_city = city_map.get(prompt, prompt)
-   #st.write(city)
+      st.write(city)
       weather_data = get_weather(Eng_city)
       st.write(weather_data)
       st.write(f"{city}의 날씨를 알려준다")
