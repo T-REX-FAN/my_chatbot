@@ -45,7 +45,7 @@ if prompt := st.text_input("도시 이름을 입력하세요"):
       st.write(f"온도는 : {round(weather_data['main']['temp'])} C")
       st.write(f"최저온도는 : {round(weather_data['main']['temp_min'])} C")
       st.write(f"최고온도는 : {round(weather_data['main']['temp_max'])} C")
-      reply = f"{prompt}의 현재 날씨는 \n\n 기온:{round(weather_data['main']['temp'])} 이고 \n 상태는 {desc}"
+      reply = f"{prompt}의 현재 날씨는 \n\n 기온:{round(weather_data['main']['temp'])} 이고 \n 상태는 weather_dict[{weather_data['weather'][0]['main']}]"
       st.markdown(reply)
       st.session_state.message.append({"role":"assistant", "content":prompt})
     else:
