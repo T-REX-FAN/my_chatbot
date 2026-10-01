@@ -49,6 +49,6 @@ if prompt := st.text_input("도시 이름을 입력하세요"):
       st.markdown(reply)
       st.session_state.message.append({"role":"assistant", "content":prompt})
    else:
-      reply = "못찾음 ㅅㄱ."
-      st.markdown(reply)
-      st.session_state.message.append({"role":"assistant", "content":prompt})
+     reply = "못찾음 ㅅㄱ."
+     st.markdown(reply)
+     st.session_state.message.append({"role":"assistant", "content":prompt})
