@@ -2,7 +2,7 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 import streamlit as st
 
-kst = ZoneInfo("Asia/seoul")
+kst = ZoneInfo("Asia/Seoul")
 
 now_kst = datetime.now(kst)
 
