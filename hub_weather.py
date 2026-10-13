@@ -8,7 +8,8 @@ now_kst = datetime.now(kst)
 
 tm_value = now_kst.strftime('%Y%m%d%H%M')
 
-https://apihub.kma.go.kr/api/typ01/url/kma_sfctm2.php?tm=tm_value&stn=0&help=1&authKey=WHPm-aVWQvmz5vmlVgL54Q
+url = https://apihub.kma.go.kr/api/typ01/url/kma_sfctm2.php?tm=tm_value&stn=0&help=1&authKey=WHPm-aVWQvmz5vmlVgL54Q
 
 st.write(now_kst)
 st.write(tm_value)
+st.write(url)
