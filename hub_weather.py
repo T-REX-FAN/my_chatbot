@@ -6,4 +6,4 @@ kst = ZoneInfo("Asia/Seoul")
 
 now_kst = datetime.now(kst)
 
-st.write(now)
+st.write(now_kst)
