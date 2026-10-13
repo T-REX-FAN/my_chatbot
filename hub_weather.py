@@ -14,4 +14,4 @@ return response.json()
 
 st.write(now_kst)
 st.write(tm_value)
-st.write(url)
+st.write(response)
