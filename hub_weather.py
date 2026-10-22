@@ -1,6 +1,7 @@
 from datetime import datetime
 from zoneinfo import ZoneInfo
 import streamlit as st
+import requests
 
 kst = ZoneInfo("Asia/Seoul")
 
