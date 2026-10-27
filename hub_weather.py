@@ -17,7 +17,7 @@ all_lines = response.text.split('\n')
 clone_lines = []
 sample_data = [0.3, 10.0, 1.6, 56.0, 6.9, -9.0, -9.0, -9.0, -9.0]
 for x in sample_data:
-  if x = 1.6 :
+  if x == 1.6 :
     st.write("x")
 
 st.write("현재 시간: "now_kst)
