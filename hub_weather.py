@@ -25,5 +25,5 @@ st.write("변환된 현재 시간:", tm_value)
 st.write(response.text)
 
 
-for 
-st.write("현재 온도: ")
+# for 
+# st.write("현재 온도: ")
