@@ -26,6 +26,8 @@ sample_text = "Hello, python world"
 
 st.write(sample_text[13:])
 
+st.wrtie(all_lines)
+
 
 
 st.write("현재 시간:", now_kst)
