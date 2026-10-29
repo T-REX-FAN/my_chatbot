@@ -20,8 +20,8 @@ for clone_lines in sample_data:
   if clone_lines == 1.6 :
     st.write(clone_lines)
 
-st.write("현재 시간: "now_kst)
-st.write("변환된 현재 시간: "tm_value)
+st.write("현재 시간:", now_kst)
+st.write("변환된 현재 시간:", tm_value)
 st.write(response.text)
 
 
