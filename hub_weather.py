@@ -18,7 +18,7 @@ clone_lines = []
 sample_data = [0.3, 10.0, 1.6, 56.0, 6.9, -9.0, -9.0, -9.0, -9.0]
 for clone_lines in sample_data:
   if clone_lines == 1.6 :
-    st.write(현재온도:", clone_lines)
+    st.write("현재온도:", clone_lines)
 
 st.write("현재 시간:", now_kst)
 st.write("변환된 현재 시간:", tm_value)
