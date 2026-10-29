@@ -18,7 +18,15 @@ clone_lines = []
 sample_data = [0.3, 10.0, 1.6, 56.0, 6.9, -9.0, -9.0, -9.0, -9.0]
 for clone_lines in sample_data:
   if clone_lines == 1.6 :
-    st.write("현재온도:", clone_lines)
+    st.write("샘플실험:", clone_lines)
+
+for line in all_lines:
+  if line != "" and not line.startswith('#'):
+    clean_lines.append(line)
+
+data_line = clean_lines
+  
+
 
 sample_text = "Hello, python world"
 
