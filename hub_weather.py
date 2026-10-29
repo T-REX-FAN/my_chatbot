@@ -26,7 +26,7 @@ for line in all_lines:
   if line != "" and not line.startswith('#'):
     clean_lines.append(line)
 
-data_line = clean_lines
+data_line = clean_lines[-1]
   
 
 
@@ -34,7 +34,7 @@ sample_text = "Hello, python world"
 
 st.write(sample_text[13:])
 
-st.write(all_lines)
+st.write(data_line)
 
 
 
