@@ -14,6 +14,8 @@ response = requests.get(url)
 
 all_lines = response.text.split('\n')
 
+st.write(all_lines)
+
 clone_lines = []
 sample_data = [0.3, 10.0, 1.6, 56.0, 6.9, -9.0, -9.0, -9.0, -9.0]
 for clone_lines in sample_data:
