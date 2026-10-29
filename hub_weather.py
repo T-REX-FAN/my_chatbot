@@ -26,7 +26,7 @@ for line in all_lines:
   if line != "" and not line.startswith('#'):
     clean_lines.append(line)
 
-data_line = clean_lines[-1]
+data_line = clean_lines[-6:-1]
   
 
 
