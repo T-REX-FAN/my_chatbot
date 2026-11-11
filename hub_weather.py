@@ -12,6 +12,8 @@ tm_value = now_kst.strftime('%Y%m%d%H%M')
 url = f"https://apihub.kma.go.kr/api/typ01/url/kma_sfctm2.php?tm=tm_value&stn=0&help=1&authKey=WHPm-aVWQvmz5vmlVgL54Q"
 response = requests.get(url)
 
+st.write(type(url))
+
 all_lines = response.text.split('\n')
 
 clean_lines = []
@@ -38,7 +40,7 @@ st.write(sample_text[13:])
 st.write(data_line)
 
 
-onlys = data_line.text.split('\n')
+# onlys = data_line.text.split('\n')
 
 # for rah in onlys:
 #   if rah 
