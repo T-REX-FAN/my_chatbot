@@ -27,9 +27,6 @@ for line in all_lines:
     clean_lines.append(line)
 
 
-# for rah in all_lines:
-#   if rah 
-
 data_line = clean_lines[-1]
   
 
@@ -39,6 +36,12 @@ sample_text = "Hello, python world"
 st.write(sample_text[13:])
 
 st.write(data_line)
+
+
+onlys = data_line.text.split('\n')
+
+# for rah in onlys:
+#   if rah 
 
 
 
