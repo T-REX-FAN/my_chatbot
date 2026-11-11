@@ -39,8 +39,8 @@ st.write(sample_text[13:])
 
 st.write(data_line)
 
-
-# onlys = data_line.text.split('\n')
+ar = requests.get(data_line)
+onlys = ar.text.split('\n')
 
 # for rah in onlys:
 #   if rah 
