@@ -37,7 +37,7 @@ sample_text = "Hello, python world"
 
 st.write(sample_text[13:])
 
-st.write(data_line[20:25])
+st.write(data_line[20:35])
 
 
 
