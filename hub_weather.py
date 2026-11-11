@@ -39,6 +39,9 @@ st.write(sample_text[13:])
 
 st.write(data_line[40:46])
 
+rah = data_line.split()
+st.write(rah[0])
+
 
 
 # for rah in onlys:
