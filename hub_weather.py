@@ -37,10 +37,9 @@ sample_text = "Hello, python world"
 
 st.write(sample_text[13:])
 
-st.write(data_line)
+st.write(data_line[:])
 
-ar = requests.get(data_line)
-onlys = ar.text.split('\n')
+
 
 # for rah in onlys:
 #   if rah 
