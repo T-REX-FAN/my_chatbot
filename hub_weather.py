@@ -40,6 +40,7 @@ st.write(sample_text[13:])
 st.write(data_line[40:46])
 
 rah = data_line.split()
+st.write(rah)
 st.write(rah[0])
 
 current_temp = (rah[11])
@@ -54,7 +55,7 @@ st.write(current_temp)
 
 st.write("현재 시간:", now_kst)
 st.write("변환된 현재 시간:", tm_value)
-st.write(response.text)
+# st.write(response.text)
 
 
 # for 
