@@ -42,6 +42,9 @@ st.write(data_line[40:46])
 rah = data_line.split()
 st.write(rah[0])
 
+current_temp = (rah[11])
+st.write(current_temp)
+
 
 
 # for rah in onlys:
