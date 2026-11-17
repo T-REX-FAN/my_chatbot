@@ -29,7 +29,7 @@ for line in all_lines:
 
 data_line = clean_lines[-1]
 
-st.write(type(data_line))
+# st.write(type(data_line))
   
 
 
