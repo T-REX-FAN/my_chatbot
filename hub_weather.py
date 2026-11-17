@@ -29,7 +29,7 @@ for line in all_lines:
 
 data_line = clean_lines[-1]
 
-st.write(type(data_line))
+# st.write(type(data_line))
   
 
 
@@ -55,7 +55,7 @@ st.write(current_temp)
 
 st.write("현재 시간:", now_kst)
 st.write("변환된 현재 시간:", tm_value)
-# st.write(response.text)
+st.write(response.text)
 
 
 # for 
