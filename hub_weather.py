@@ -63,7 +63,7 @@ st.write(rah[0])
 
 
 st.write("현재 시간:", now_kst)
-st.write("현재 온도:", rah[11], "C")
+# st.write("현재 온도:", rah[11], "C")
 st.write("변환된 현재 시간:", tm_value)
 # st.write(response.text)
 
