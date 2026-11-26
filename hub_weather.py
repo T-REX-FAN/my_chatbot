@@ -71,7 +71,7 @@ st.write("변환된 현재 시간:", tm_value)
 # for 
 # st.write("현재 온도: ")
 
-if prompt := st.chat_input("도시 이름을 입력하세요"):
-  with st.chat_message("user"):
-    st.markdown(prompt)
-  st.session_state.message.append({"role":"user", "content":prompt})
+# if prompt := st.chat_input("도시 이름을 입력하세요"):
+#   with st.chat_message("user"):
+#     st.markdown(prompt)
+#   st.session_state.message.append({"role":"user", "content":prompt})
