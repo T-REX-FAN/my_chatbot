@@ -12,6 +12,14 @@ tm_value = now_kst.strftime('%Y%m%d%H%M')
 url = f"https://apihub.kma.go.kr/api/typ01/url/kma_sfctm2.php?tm=tm_value&stn=0&help=1&authKey=WHPm-aVWQvmz5vmlVgL54Q"
 response = requests.get(url)
 
+if "message" not in st.session_state:
+  st.session_state.message = []
+
+for message in st.session_state.message:
+  with st.chat_message(message["role"]):
+    st.markdown(message["content"])
+
+
 
 all_lines = response.text.split('\n')
 
